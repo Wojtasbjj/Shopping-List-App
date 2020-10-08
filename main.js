@@ -14,6 +14,8 @@ const btn = document.getElementById("button");
             div.classList.toggle("normal");
             console.log("to normalna rzecz");
         }
+        important.checked = false;
+        
             const cancel = function () {
                     div.classList.toggle("cancel")
                     console.log("obiekt został przekreślony");
