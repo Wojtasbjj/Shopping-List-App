@@ -1,0 +1,57 @@
+body {
+    background-color: white;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+#menu {
+    width: 500px;
+    height: 50px;
+    margin: 10px auto;
+}
+
+form {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#page {
+    height: 420px;
+    width: 300px;
+    background-image: url(https://i.ibb.co/8gp18TK/CREATOR-gd-jpeg-v1-0-using-IJG-JPEG-v62-quality-90.jpg);
+    background-size: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+div {
+    margin: 10px;
+    font-size: 20px;
+
+}
+
+
+#list {
+    margin-left: 200px;
+    padding-top: 120px;
+}
+
+.cancel {
+    text-decoration: line-through;
+}
+
+.important {
+    color: red;
+}
+
+.normal {
+    color: black;
+}
