@@ -26,7 +26,6 @@ button {
     height: 420px;
     width: 300px;
     background-image: url(https://i.ibb.co/8gp18TK/CREATOR-gd-jpeg-v1-0-using-IJG-JPEG-v62-quality-90.jpg);
-    background-size: auto;
     margin: 0 auto;
     text-align: center;
     padding-top: 100px;
@@ -54,4 +53,8 @@ div {
 
 .normal {
     color: black;
+}
+
+.green {
+    color: green;
 }

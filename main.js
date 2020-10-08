@@ -16,9 +16,15 @@ const btn = document.getElementById("button");
         }
             const cancel = function () {
                     div.classList.toggle("cancel")
-                    console.log("powinno przekreślić");
+                    console.log("obiekt został przekreślony");
                 }
                 div.addEventListener("click", cancel);
+
+            const usuniecie = function () {
+                document.getElementById("page").removeChild(div);
+                console.log("obiekt został usunięty");
+            }
+                div.addEventListener("dblclick", usuniecie);
             
     }
     btn.addEventListener("click", add);
