@@ -37,6 +37,14 @@ div {
 
 }
 
+#instruction {
+    display: block;
+    border: 2px solid black;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    width: 300px;
+}
+
 
 #list {
     margin-left: 200px;
@@ -53,8 +61,4 @@ div {
 
 .normal {
     color: black;
-}
-
-.green {
-    color: green;
 }
