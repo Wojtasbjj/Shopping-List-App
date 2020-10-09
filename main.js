@@ -6,6 +6,8 @@
         div.textContent = item.value;
         if (productList.includes(item.value)) {
             alert(`produkt ${item.value} jest już na liście!`);
+            item.value = "";
+            important.checked = false;
             return;
         }
         productList.push(item.value);
