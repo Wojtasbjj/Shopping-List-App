@@ -1,8 +1,14 @@
-const btn = document.getElementById("button");
+    const btn = document.getElementById("button");
     const item = document.getElementById("item");
+    const productList = [];
     const add = function () {
         const div = document.createElement("div");
         div.textContent = item.value;
+        if (productList.includes(item.value)) {
+            alert(`produkt ${item.value} jest już na liście!`);
+            return;
+        }
+        productList.push(item.value);
         document.getElementById("page").appendChild(div);
         console.log(item.value);
         item.value = "";
