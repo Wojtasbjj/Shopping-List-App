@@ -38,3 +38,19 @@
             
     }
     btn.addEventListener("click", add);
+    const pItems = document.querySelectorAll("p"); //pobiera elementy p i tworzy obiekt tablicopodobny. Mozna też stworzyć tablicę za pomocą operatora rest [...document.getElementByTag]
+    const instruction = document.getElementById('instruction');
+    let flaga = true;
+    const instructionReview = () => {
+        if (flaga = true) {
+        for (i=0; i<pItems.length; i++) {
+            pItems[i].style.display = 'block';
+            console.log('wyświetlam instrukcję');
+        }
+        flaga = false;
+        }
+        
+    }
+
+
+    instruction.addEventListener('click', instructionReview)
