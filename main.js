@@ -47,16 +47,26 @@
     const pItems = document.querySelectorAll("p"); //pobiera elementy p i tworzy obiekt tablicopodobny. Mozna też stworzyć tablicę za pomocą operatora rest [...document.getElementByTag]
     const instruction = document.getElementById('instruction');
     let flaga = true;
+
     const instructionReview = () => {
-        if (flaga = true) {
+        if (flaga === true) {
         for (i=0; i<pItems.length; i++) {
             pItems[i].style.display = 'block';
-            console.log('wyświetlam instrukcję');
         }
+        console.log('wyświetlam instrukcję');
         flaga = false;
+        return;
         }
-        
+        if (flaga === false) {
+            for (i=0; i<pItems.length; i++) {
+                pItems[i].style.display = 'none';
+            }
+            flaga = true;
+            console.log('zamykam isntrukcje');
+            return;
+        }
     }
+    
 
 
-    instruction.addEventListener('click', instructionReview)
+    instruction.addEventListener('click', instructionReview);
