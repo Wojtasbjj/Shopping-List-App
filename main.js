@@ -30,11 +30,12 @@
                 }
                 div.addEventListener("click", cancel);
 
-            const usuniecie = function () {
+            const deleteItem = function () {
                 document.getElementById("page").removeChild(div);
+                // productList.removeChild('div'); // to nie działa...
                 console.log("obiekt został usunięty");
             }
-                div.addEventListener("dblclick", usuniecie);
+                div.addEventListener("dblclick", deleteItem);
             
     }
     btn.addEventListener("click", add);
