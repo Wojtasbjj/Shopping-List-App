@@ -4,6 +4,9 @@
     const add = function () {
         const div = document.createElement("div");
         div.textContent = item.value;
+        for (let i=0; i <= productList.length; i++) {
+            div.setAttribute('id', [i])
+        };
         if (productList.includes(item.value)) {
             alert(`produkt ${item.value} jest już na liście!`);
             item.value = "";
@@ -30,9 +33,11 @@
                 }
                 div.addEventListener("click", cancel);
 
-            const deleteItem = function () {
+            const deleteItem = function (e) {
                 document.getElementById("page").removeChild(div);
-                // productList.removeChild('div'); // to nie działa...
+                const index = e.target.id;
+                console.log(index);
+                productList.splice(index, 1)
                 console.log("obiekt został usunięty");
             }
                 div.addEventListener("dblclick", deleteItem);
